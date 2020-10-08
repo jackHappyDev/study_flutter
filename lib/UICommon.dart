@@ -134,3 +134,62 @@ class UIIcon extends StatelessWidget {
     );
   }
 }
+
+//button
+class UIButton extends StatelessWidget {
+  const UIButton({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const RaisedButton(
+              onPressed: null, child: Text('this is the First one')),
+          const RaisedButton(
+              onPressed: null,
+              textColor: Colors.white,
+              child: Text(
+                'ENABLE BUTTON',
+                style: TextStyle(fontSize: 30.0),
+              )),
+          const RaisedButton(
+              onPressed: null, child: Text('this is the third one')),
+        ],
+      ),
+    );
+  }
+}
+
+//Scaffold
+class UIxx extends StatelessWidget {
+  int _count = 1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('$_count'),
+      ),
+      body: SafeArea(
+          child: Center(
+        child: Text('You have pressed the button $_count times.'),
+      )),
+      bottomNavigationBar: BottomAppBar(
+        shape: const CircularNotchedRectangle(),
+        child: Container(
+          height: 50.0,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (() {
+          _count++;
+        }),
+        tooltip: '自增操作',
+        child: Icon(Icons.add),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+    );
+  }
+}

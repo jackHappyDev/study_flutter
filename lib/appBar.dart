@@ -77,7 +77,7 @@ class MyScaffold extends StatelessWidget {
             // child: UIColumn(),
             // child: UItext(),
             // child: UIIcon(),
-            child: UIxx(),
+            child: UIScaffoldfull(),
           )),
         ],
       ),

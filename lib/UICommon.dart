@@ -213,11 +213,20 @@ class UIAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new AppBar(
-      title: Text('video demo '),
       actions: [
         IconButton(icon: Icon(Icons.mail), onPressed: null),
-        IconButton(icon: Icon(Icons.menu), onPressed: null),
       ],
+      title: Text(
+        'video demo ',
+        textAlign: TextAlign.right,
+      ),
+      // actions: [
+      //   IconButton(icon: Icon(Icons.mail), onPressed: null),
+      //   SizedBox(
+      //     width: 10,
+      //   ),
+      //   IconButton(icon: Icon(Icons.menu), onPressed: null),
+      // ],
     );
   }
 }

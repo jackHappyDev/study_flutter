@@ -205,3 +205,19 @@ class UIScaffoldless extends State<UIScaffoldfull> {
     );
   }
 }
+
+//APPBar  直接return 的时候是 new AppBar  平常使用的时候是键值对 appBar:AppBar
+class UIAppBar extends StatelessWidget {
+  const UIAppBar({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return new AppBar(
+      title: Text('video demo '),
+      actions: [
+        IconButton(icon: Icon(Icons.mail), onPressed: null),
+        IconButton(icon: Icon(Icons.menu), onPressed: null),
+      ],
+    );
+  }
+}

@@ -50,12 +50,13 @@ class MyScaffold extends StatelessWidget {
       // Column is 垂直方向的线性布局.
       child: new Column(
         children: <Widget>[
-          new MyAppBar(
-            title: new Text(
-              'good story',
-              style: Theme.of(context).primaryTextTheme.title,
-            ),
-          ),
+          // new MyAppBar(
+          //   title: new Text(
+          //     'good story',
+          //     style: Theme.of(context).primaryTextTheme.title,
+          //   ),
+          // ),
+          UIAppBar(),
           new Expanded(
             child: new Center(
               // child: new Text('Hello, world! 1again'),

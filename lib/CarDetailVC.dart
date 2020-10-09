@@ -16,24 +16,24 @@ class CarListDetailVC extends StatelessWidget {
               onPressed: () {
                 print('返回上级目录');
                 // Navigator.pop(context);
-                showAlertView(context);
+                showAlertView(context, '你好啊', '这里是测试内容');
               })),
     );
   }
 }
 
-void showAlertView(context) {
+void showAlertView(context, title, content) {
   showDialog<Null>(
     context: context,
     barrierDismissible: false,
     builder: (BuildContext context) {
       return new AlertDialog(
-        title: new Text('标题'),
+        title: new Text(title),
         content: new SingleChildScrollView(
           child: new ListBody(
             children: <Widget>[
-              new Text('内容 1'),
-              new Text('内容 2'),
+              new Text(title),
+              new Text(content),
             ],
           ),
         ),

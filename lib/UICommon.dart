@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './CarDetailVC.dart';
 
 //container
 class UIcontainer extends StatelessWidget {
@@ -214,7 +215,13 @@ class UIAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return new AppBar(
       actions: [
-        IconButton(icon: Icon(Icons.mail), onPressed: null),
+        IconButton(
+            icon: Icon(Icons.mail),
+            onPressed: () {
+              print('跳转到carlist view 页面');
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => CarListDetailVC()));
+            }),
       ],
       title: Text(
         'video demo ',

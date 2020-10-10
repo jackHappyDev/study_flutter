@@ -18,7 +18,9 @@ class CarListDetailVC extends StatelessWidget {
                 print('返回上级目录');
                 // Navigator.pop(context);
                 // showAlertView(context, '你好啊', '这里是测试内容');
-                loadData_http_get('https://www.baidu.com');
+                // loadData_http_get('https://www.baidu.com');
+                loadData_http_post_convenience(
+                    'https://www.runoob.com/try/demo_source/demo_ajax_gethint.php');
               })),
     );
   }
@@ -78,14 +80,14 @@ void loadData_http_post_convenience(Url) async {
   print('------ loadData_http_post --------');
 
   var headers = Map<String, String>();
-  headers["loginSource"] = "IOS";
-  headers["useVersion"] = "3.1.0";
-  headers["isEncoded"] = "1";
-  headers["bundleId"] = "com.nongfadai.iospro";
-  headers["loginSource"] = "IOS";
-  headers["Content\-Type"] = "application/json";
+  // headers["loginSource"] = "IOS";
+  // headers["useVersion"] = "3.1.0";
+  // headers["isEncoded"] = "1";
+  // headers["bundleId"] = "com.nongfadai.iospro";
+  // headers["loginSource"] = "IOS";
+  // headers["Content\-Type"] = "application/json";
 
-  Map params = {'currentPage': '1'};
+  Map params = {'suggest': '123'};
   // 嵌套两层都可以，但是具体哪个好还有待确认？？？？
   // var jsonParams = utf8.encode(json.encode(params));
   // var jsonParams = json.encode(params);

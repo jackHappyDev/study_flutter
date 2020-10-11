@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './CarDetailVC.dart';
+import 'ShowListView.dart';
 
 //container
 class UIcontainer extends StatelessWidget {
@@ -219,8 +220,10 @@ class UIAppBar extends StatelessWidget {
             icon: Icon(Icons.mail),
             onPressed: () {
               print('跳转到carlist view 页面');
+              // Navigator.push(context,
+              // MaterialPageRoute(builder: (context) => CarListDetailVC()));
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => CarListDetailVC()));
+                  MaterialPageRoute(builder: (context) => ListViewfull()));
             }),
       ],
       title: Text(

@@ -26,8 +26,12 @@ class CarListDetailVC extends StatelessWidget {
                 // 'https://www.runoob.com/try/demo_source/demo_ajax_gethint.php');
                 // MSProgressHUD.showLoading(context);
                 MSProgressHUD.showLoading(context, message: "加载中");
-                // MSProgressHUD.showError(context);
                 // 延时1s执行返回
+                Future.delayed(Duration(seconds: 1), () {
+                  // Navigator.of(context).pop();
+                  // print('延时1s执行');
+                  MSProgressHUD.dismiss(context);
+                });
               })),
     );
   }

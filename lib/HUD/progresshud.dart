@@ -52,11 +52,11 @@ class MSProgressHUD {
                 MaterialLocalizations.of(context).modalBarrierDismissLabel,
             message: message == null ? "" : message,
             progressType: type));
-    Future.delayed(Duration(seconds: 1), () {
-      // Navigator.of(context).pop();
-      // print('延时1s执行');
-      MSProgressHUD.dismiss(context);
-    });
+    // Future.delayed(Duration(seconds: 1), () {
+    //   // Navigator.of(context).pop();
+    //   // print('延时1s执行');
+    //   MSProgressHUD.dismiss(context);
+    // });
   }
 
   static dismiss(BuildContext context) {

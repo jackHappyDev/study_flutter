@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http; //导入前需要配置
-import './HUD/msprogresshud.dart';
-import './HUD/progresshud.dart';
+import '../HUD/msprogresshud.dart';
+import '../HUD/progresshud.dart';
 
 // 购物车页面
 class CarListDetailVC extends StatelessWidget {
@@ -25,13 +25,13 @@ class CarListDetailVC extends StatelessWidget {
                 // loadData_http_post_convenience(
                 // 'https://www.runoob.com/try/demo_source/demo_ajax_gethint.php');
                 // MSProgressHUD.showLoading(context);
-                MSProgressHUD.showLoading(context, message: "加载中");
+                // MSProgressHUD.showLoading(context, message: "加载中");
                 // 延时1s执行返回
-                Future.delayed(Duration(seconds: 1), () {
-                  // Navigator.of(context).pop();
-                  // print('延时1s执行');
-                  MSProgressHUD.dismiss(context);
-                });
+                // Future.delayed(Duration(seconds: 1), () {
+                //   // Navigator.of(context).pop();
+                //   // print('延时1s执行');
+                //   MSProgressHUD.dismiss(context);
+                // });
               })),
     );
   }

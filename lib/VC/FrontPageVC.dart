@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../View/BannerSwipperView.dart';
 
 class FrontPage extends StatelessWidget {
   const FrontPage({Key key}) : super(key: key);
@@ -10,7 +11,7 @@ class FrontPage extends StatelessWidget {
         title: Text('首页'),
       ),
       body: Center(
-        child: Text('这个是首页'),
+        child: SlideBanner(),
       ),
     );
   }

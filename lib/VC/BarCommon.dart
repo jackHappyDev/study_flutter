@@ -51,11 +51,11 @@ class _TabBarPageState extends State<TabBarPage>
               icon: Icon(Icons.home),
             ),
             Tab(
-              text: '列表',
+              text: '书城',
               icon: Icon(Icons.list),
             ),
             Tab(
-              text: '信息',
+              text: '听书',
               icon: Icon(Icons.message),
             ),
             Tab(
